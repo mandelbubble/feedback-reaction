@@ -1,0 +1,14 @@
+.comment {
+    display: flex;
+    flex-direction: row;
+
+
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    
+    @media (max-width: 968px) {
+        flex-direction: column;
+    }
+}

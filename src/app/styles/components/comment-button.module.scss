@@ -1,0 +1,42 @@
+@import '../var';
+
+.buttonWrapper {
+    position: relative;
+    color : $white;
+
+    display: flex;
+    flex-direction: row;
+
+    &:hover {
+        .imageWrapper {
+            transform: translateX(8px);
+        }
+    }
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background: $purple;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.imageWrapper{
+    z-index: 1;
+    transform: translateX(-100%);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: $purple;
+    overflow: hidden;
+
+    transition: transform 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.showAvatar {
+    transform: translateX(8px);
+}

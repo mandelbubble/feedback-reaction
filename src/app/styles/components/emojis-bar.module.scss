@@ -1,0 +1,37 @@
+@import '../var';
+
+.bar {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    // background: $white ;
+}
+
+
+.reaction {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    margin-left: 12px;
+    text-align: center;
+    font-size: 12px;
+    background: none;
+    border: none;
+    outline: none;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.3;  
+    transition: opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &:hover{
+        opacity: 1;
+    }
+
+    span { opacity : 0.8 }
+}
+
+.show { opacity: 1 ;}
+
+
